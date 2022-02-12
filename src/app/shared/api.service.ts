@@ -8,18 +8,18 @@ export class ApiService {
 
   constructor( private http: HttpClient) { }
   postTask(data : any ) {
-    return this.http.post<any>('https://6207e68722c9e90017d32f7c.mockapi.io/posts' , data).pipe(map((res:any)=>{ return res;}));
+    return this.http.post<any>('http://localhost:3000/posts' , data).pipe(map((res:any)=>{ return res;}));
   }
   getTask(){
-    return this.http.get<any>('https://6207e68722c9e90017d32f7c.mockapi.io/posts').pipe(map((res:any)=>{ return res;}));
+    return this.http.get<any>('http://localhost:3000/posts').pipe(map((res:any)=>{ return res;}));
   }
 
   updateTask(data:any , id: number){
-    return this.http.put<any>('https://6207e68722c9e90017d32f7c.mockapi.io/posts/'+id , data).pipe(map((res:any)=>{ return res;}));
+    return this.http.put<any>('http://localhost:3000/posts/'+id , data).pipe(map((res:any)=>{ return res;}));
   }
 
   deleteTask(id: number){
-    return this.http.delete<any>('https://6207e68722c9e90017d32f7c.mockapi.io/posts/'+id).pipe(map((res:any)=>{ return res;}));
+    return this.http.delete<any>('http://localhost:3000/posts/'+id).pipe(map((res:any)=>{ return res;}));
   }
   
 }
