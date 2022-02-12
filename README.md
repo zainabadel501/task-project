@@ -6,7 +6,7 @@ Users should be able to:
 - posting task and can edit or delete and display all tasks posted 
 
 # Backend 
-in this project the user can post/delete/edit tasks by creating fake REST API Json-server requests (get , POST, PUT, PATCH or DELETE) 
+in this project the user can post/delete/edit tasks by creating fake REST API Json-server requests ( GET , POST, PUT, PATCH or DELETE) 
 
 # Built with 
 - setup npm. 
@@ -24,8 +24,8 @@ in this project the user can post/delete/edit tasks by creating fake REST API Js
 - data dublicated in json file. 
 - cannot find the 'ngModel' module.
 # next Step 
--deploy angular app to firebase 
--live demo in githup
+- deploy angular app to firebase 
+- live demo in githup
 
 
 
